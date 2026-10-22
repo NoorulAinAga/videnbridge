@@ -182,7 +182,7 @@ export default function Header({ brand, navigation }) {
                     </div>
 
                     <Link
-                      href="/contact"
+                      href="/contact-us"
                       className="dropdown-bottom-link"
                       onClick={closeMenus}
                     >
