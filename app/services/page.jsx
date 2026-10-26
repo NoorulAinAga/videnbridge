@@ -25,7 +25,14 @@ export default async function ServicesPage() {
   return (
     <>
       <ServicesBannerCarousel services={services} />
-      <ServicesQuickNav heading={servicesPage.heading} services={services} />
+      <ServicesQuickNav
+        heading={servicesPage.heading}
+        services={services}
+        extraLink={{
+          ...servicesPage.digitalSolutionsLink,
+          icon: "🌐",
+        }}
+      />
       {services.map((service, index) => (
         <ServiceDetail
           key={service.anchorId}

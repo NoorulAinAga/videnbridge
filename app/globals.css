@@ -857,6 +857,20 @@ a {
   box-shadow: 0 15px 35px rgba(10, 44, 67, 0.09);
 }
 
+.service-card-link {
+  border-color: rgba(11, 108, 245, 0.4);
+  background: linear-gradient(150deg, #ffffff 55%, #eaf3ff 100%);
+}
+
+.service-card-link:hover {
+  border-color: var(--teal);
+}
+
+.service-card-link .service-icon {
+  border: 1px solid rgba(11, 108, 245, 0.3);
+  background: rgba(11, 108, 245, 0.08);
+}
+
 .service-card-top {
   display: flex;
   align-items: center;
@@ -2183,6 +2197,35 @@ a {
   transform: translateY(-4px);
   border-color: #a9cdf8;
   box-shadow: 0 15px 35px rgba(10, 44, 67, 0.09);
+}
+
+.services-quick-link-accent {
+  border-color: rgba(11, 108, 245, 0.35);
+  background: linear-gradient(120deg, #0b6cf5, #2e8bff);
+}
+
+.services-quick-link-accent .service-icon {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.14);
+  color: white;
+}
+
+.services-quick-link-accent .services-quick-copy strong {
+  color: white;
+}
+
+.services-quick-link-accent .services-quick-copy small {
+  color: #dbeaff;
+}
+
+.services-quick-link-accent .services-quick-arrow {
+  color: white;
+}
+
+.services-quick-link-accent:hover {
+  transform: translateY(-4px);
+  border-color: #0b6cf5;
+  box-shadow: 0 15px 35px rgba(11, 108, 245, 0.28);
 }
 
 .services-quick-link .service-icon {

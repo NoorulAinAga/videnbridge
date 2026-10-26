@@ -12,7 +12,7 @@ export default async function contactPage() {
     <>
      
        <ContactSection contact={content.contact} />
-       <FinalCta content={home.finalCta} />
+       {/* <FinalCta content={home.finalCta} /> */}
     </>
   );
 }

@@ -16,7 +16,11 @@ export default async function HomePage() {
     <>
       <HeroCarousel slides={home.heroSlides} />
       <IntroSection intro={home.intro} />
-      <ServicesSection heading={home.servicesHeading} services={home.services} />
+      <ServicesSection
+        heading={home.servicesHeading}
+        services={home.services}
+        extraService={content.servicesPage.digitalSolutionsLink}
+      />
       <WhyVidenBridge items={home.whyUs} />
       <AudienceSection audiences={home.audiences} />
       <ApproachSection items={home.approach} />

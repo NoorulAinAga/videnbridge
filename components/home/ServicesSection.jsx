@@ -3,7 +3,7 @@
 
 import { useEffect, useState } from "react";
 
-export default function ServicesSection({ heading, services }) {
+export default function ServicesSection({ heading, services, extraService }) {
   const [selectedService, setSelectedService] = useState(null);
 
   useEffect(() => {
@@ -61,6 +61,26 @@ export default function ServicesSection({ heading, services }) {
               </button>
             </article>
           ))}
+
+          {extraService && (
+            <a className="service-card service-card-link" href={extraService.href}>
+              <div className="service-card-top">
+                <span className="service-icon">{extraService.icon}</span>
+                <span className="service-number">{extraService.number || "04"}</span>
+              </div>
+
+              <h3>{extraService.title}</h3>
+              <h4>{extraService.subtitle}</h4>
+
+              <p className="service-description">
+                {extraService.description}
+              </p>
+
+              <span className="text-link service-read-more">
+                {extraService.label} <span aria-hidden="true">↗</span>
+              </span>
+            </a>
+          )}
         </div>
       </div>
 

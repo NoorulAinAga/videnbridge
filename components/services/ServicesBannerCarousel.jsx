@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-export default function ServicesBannerCarousel({ services }) {
+export default function ServicesBannerCarousel({ services, eyebrowPrefix = "OUR SERVICES" }) {
   const [active, setActive] = useState(0);
 
   useEffect(() => {
@@ -29,7 +29,7 @@ export default function ServicesBannerCarousel({ services }) {
       ))}
       <div className="container hero-content-wrap">
         <div className="hero-content" key={service.title}>
-          <p className="eyebrow eyebrow-light"><span />OUR SERVICES — {service.number}</p>
+          <p className="eyebrow eyebrow-light"><span />{eyebrowPrefix} — {service.number}</p>
           <h1>{service.title}</h1>
           <p className="hero-description">{service.description}</p>
           <div className="hero-actions">

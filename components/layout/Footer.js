@@ -25,6 +25,7 @@ export default function Footer({ brand, navigation, contact }) {
           <a href="/services#patent-intelligence">Patent Intelligence</a>
           <a href="/services#market-intelligence">Market Intelligence</a>
           <a href="/services#technology-watch">Technology Watch</a>
+          <a href="/services/digital-solutions">Digital Solutions</a>
         </div>
         <div className="footer-column">
           <h3>Contact</h3>

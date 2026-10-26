@@ -132,34 +132,10 @@ export default function Header({ brand, navigation }) {
                     </div>
 
                     <div className="dropdown-links">
-                      {subItems.length > 0 ? (
-                        subItems.map((subItem) => (
-                          <Link
-                            key={subItem.label}
-                            href={subItem.href}
-                            className="service-dropdown-link"
-                            onClick={closeMenus}
-                          >
-                            <span className="service-link-icon">
-                              ↗
-                            </span>
-
-                            <span className="service-link-copy">
-                              <strong>{subItem.label}</strong>
-
-                              {subItem.description && (
-                                <small>{subItem.description}</small>
-                              )}
-                            </span>
-
-                            <span className="service-link-arrow">
-                              →
-                            </span>
-                          </Link>
-                        ))
-                      ) : (
+                      {subItems.map((subItem) => (
                         <Link
-                          href={item.href}
+                          key={subItem.label}
+                          href={subItem.href}
                           className="service-dropdown-link"
                           onClick={closeMenus}
                         >
@@ -168,17 +144,39 @@ export default function Header({ brand, navigation }) {
                           </span>
 
                           <span className="service-link-copy">
-                            <strong>Explore All Services</strong>
-                            <small>
-                              Discover our digital solutions
-                            </small>
+                            <strong>{subItem.label}</strong>
+
+                            {subItem.description && (
+                              <small>{subItem.description}</small>
+                            )}
                           </span>
 
                           <span className="service-link-arrow">
                             →
                           </span>
                         </Link>
-                      )}
+                      ))}
+
+                      <Link
+                        href={item.href}
+                        className="service-dropdown-link"
+                        onClick={closeMenus}
+                      >
+                        <span className="service-link-icon">
+                          ↗
+                        </span>
+
+                        <span className="service-link-copy">
+                          <strong>Explore All Services</strong>
+                          <small>
+                            Intelligent research services
+                          </small>
+                        </span>
+
+                        <span className="service-link-arrow">
+                          →
+                        </span>
+                      </Link>
                     </div>
 
                     <Link

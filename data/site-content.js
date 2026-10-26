@@ -14,6 +14,14 @@ export const siteContent = {
     {
       label: "Services",
       href: "/services",
+      children: [
+        {
+          label: "IT Solutions",
+          href: "/services/digital-solutions",
+          description:
+            "Web development, UI/UX design, graphics design, and SEO.",
+        },
+      ],
     },
     // { label: "Our Approach", href: "/#approach" },
     // { label: "Contact", href: "/contact-us" },
@@ -217,6 +225,147 @@ export const siteContent = {
         "Talk to our team about your research questions — from patent landscapes and market opportunities to ongoing technology monitoring.",
       buttonLabel: "Contact Our Team",
     },
+    digitalSolutionsLink: {
+      icon: "🌐",
+      eyebrow: "IT SolutionS",
+      title: "IT Solutions",
+      subtitle: "Development. Design. Growth.",
+      description:
+        "Website development, web and UI/UX design, graphics design, and SEO — everything your brand needs online, delivered by one team.",
+      href: "/services/digital-solutions",
+      label: "Explore IT Solutions",
+    },
+  },
+  digitalSolutionsPage: {
+    metadata: {
+      title: "IT Solutions | VidenBridge",
+      description:
+        "Website development, web and UI/UX design, graphics design, and SEO services to launch and grow your digital presence.",
+    },
+    heading: {
+      eyebrow: "IT SolutionS",
+      title: "Everything your business needs to look sharp and grow online",
+      lead:
+        "From building fast websites and designing clean user experiences to creating brand visuals and improving search rankings — one partner for your entire digital presence.",
+    },
+    detail: {
+      offeringsLabel: "What We Deliver",
+      ctaLabel: "Start a Project",
+    },
+    finalCta: {
+      eyebrow: "LET'S BUILD TOGETHER",
+      title: "Ready to take your digital presence to the next level?",
+      body:
+        "Share your idea or project details — we will shape the right mix of development, design, and digital marketing to meet your business goals.",
+      buttonLabel: "Discuss Your Project",
+    },
+    services: [
+      {
+        number: "01",
+        icon: "💻",
+        title: "Website Development",
+        subtitle: "Fast. Secure. Scalable. Built to grow with your business.",
+        description:
+          "We build responsive, secure, and performance-optimized websites — from simple business sites and landing pages to corporate multi-page platforms that load fast, rank well, and convert visitors into customers.",
+        points: [
+          "Business Websites and Landing Pages",
+          "Corporate and Multi-page Websites",
+          "Mobile-first Responsive Development",
+          "Performance and Speed Optimization",
+          "Secure SSL and Best-practice Security Setup",
+          "CMS Integration for Self-managed Content",
+          "SEO-friendly Development Structure",
+          "Ongoing Maintenance and Support",
+        ],
+        image:
+          "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=2000&q=85",
+        imageAlt: "Code on a developer screen representing website development",
+      },
+      {
+        number: "02",
+        icon: "🖥️",
+        title: "Web Design",
+        subtitle:
+          "Clean layouts and visuals that communicate your brand instantly.",
+        description:
+          "We design modern, responsive websites that guide visitors naturally from interest to action — balancing brand personality, content clarity, and conversion-focused structure.",
+        points: [
+          "Modern, Brand-aligned Visual Design",
+          "Responsive Layouts for All Devices",
+          "Intuitive Content Structure and Navigation",
+          "Landing Page Design for Campaigns",
+          "Visual Hierarchy and Content Styling",
+          "Accessible Design Practices",
+          "Multi-page Website Redesigns",
+        ],
+        image:
+          "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=2000&q=85",
+        imageAlt: "Designer workspace representing web design",
+      },
+      {
+        number: "03",
+        icon: "✏️",
+        title: "UI/UX Design",
+        subtitle:
+          "User experiences designed around real behavior and clarity.",
+        description:
+          "We shape digital products around real users — researching how they think, mapping their journeys, and turning complexity into simple, enjoyable interfaces for web and mobile.",
+        points: [
+          "User Research and Behavior Analysis",
+          "User Flows and Information Architecture",
+          "Wireframes and Interactive Prototypes",
+          "Web and Mobile App UI Design",
+          "Usability Testing and Iteration",
+          "Component-based Design Systems",
+          "Design Handoff for Developers",
+        ],
+        image:
+          "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=2000&q=85",
+        imageAlt: "Wireframes and interfaces representing UI/UX design",
+      },
+      {
+        number: "04",
+        icon: "🎨",
+        title: "Graphics Design",
+        subtitle:
+          "Brand visuals that make your business memorable everywhere.",
+        description:
+          "From logos and brand identities to marketing creatives and print materials — we craft visuals that give your business a consistent, professional look across every touchpoint.",
+        points: [
+          "Logo and Brand Identity Design",
+          "Brand Color, Typography, and Guidelines",
+          "Social Media Creatives and Ad Banners",
+          "Marketing Collateral and Print Design",
+          "Presentation and Infographic Design",
+          "Product Packaging Design",
+          "Editable Source Files and Asset Delivery",
+        ],
+        image:
+          "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=2000&q=85",
+        imageAlt: "Colorful design work representing graphics design",
+      },
+      {
+        number: "05",
+        icon: "📈",
+        title: "SEO",
+        subtitle:
+          "Get found on Google by the customers already searching for you.",
+        description:
+          "We improve how your website ranks and performs on search engines — combining technical fixes, content optimization, and a clear keyword strategy to bring consistent, high-intent traffic.",
+        points: [
+          "Keyword Research and Search Intent Mapping",
+          "On-page SEO for All Key Pages",
+          "Technical SEO Audits and Speed Fixes",
+          "Content Optimization and Blog SEO",
+          "Local SEO with Google Business Profile",
+          "Backlink and Authority Building",
+          "Monthly Performance Reports and Insights",
+        ],
+        image:
+          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=2000&q=85",
+        imageAlt: "Analytics charts representing SEO performance",
+      },
+    ],
   },
   about: {
     hero: {
