@@ -5,9 +5,9 @@ export default function AboutOverview({ overview }) {
         <div className="about-overview-label">
           <p className="eyebrow">{overview.eyebrow}</p>
           <img
-            src="/image/logo-1.png"
-            alt="VidenBridge logo"
-            className="large-logo-img"
+            src="/image/about-brand-tile.png"
+            alt="VidenBridge — Bridging Knowledge, Innovation & Business"
+            className="about-brand-tile"
           />
         </div>
         <div>

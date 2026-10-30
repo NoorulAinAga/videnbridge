@@ -39,7 +39,7 @@ export const siteContent = {
         description:
           "Transform patent, market and technology insights into strategic business decisions.",
         image:
-          "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=2000&q=85",
+          "/image/hero-technology-network.jpg",
         imageAlt: "Digital global network representing technology intelligence",
         primaryCta: { label: "Explore Our Services", href: "#services" },
         secondaryCta: { label: "Contact Us", href: "/contact-us" },
@@ -50,8 +50,8 @@ export const siteContent = {
         description:
           "Understand technology developments, competitor strategies and emerging market opportunities with focused research.",
         image:
-          "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=85",
-        imageAlt: "Modern glass business buildings",
+          "/image/team-strategy.jpg",
+        imageAlt: "Team analyzing strategy in a modern office",
         primaryCta: { label: "Discover Our Expertise", href: "#services" },
         secondaryCta: { label: "Talk to Our Team", href: "/contact-us" },
       },
@@ -61,7 +61,7 @@ export const siteContent = {
         description:
           "Stay informed with structured intelligence updates on selected technologies, competitors and industry developments.",
         image:
-          "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=2000&q=85",
+          "/image/circuit-board.jpg",
         imageAlt: "Technology circuit board close-up",
         primaryCta: { label: "Explore Technology Watch", href: "#services" },
         secondaryCta: { label: "Send an Enquiry", href: "/contact-us" },
@@ -155,7 +155,7 @@ export const siteContent = {
         ],
         linkLabel: "Explore Patent Intelligence",
         image:
-          "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=2000&q=85",
+          "/image/hero-technology-network.jpg",
         imageAlt: "Digital global network representing patent intelligence",
       },
       {
@@ -214,8 +214,8 @@ export const siteContent = {
         ],
         linkLabel: "Explore Market Research",
         image:
-          "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=85",
-        imageAlt: "Modern glass business buildings representing market intelligence",
+          "/image/market-charts.jpg",
+        imageAlt: "Analytics charts and graphs representing market intelligence",
       },
       {
         number: "03",
@@ -282,7 +282,7 @@ export const siteContent = {
         ],
         linkLabel: "Explore Technology Watch",
         image:
-          "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=2000&q=85",
+          "/image/circuit-board.jpg",
         imageAlt: "Technology circuit board close-up representing technology watch",
       },
     ],
@@ -449,7 +449,7 @@ export const siteContent = {
           "Ongoing Maintenance and Support",
         ],
         image:
-          "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=2000&q=85",
+          "/image/website-development.jpg",
         imageAlt: "Code on a developer screen representing website development",
       },
       {
@@ -470,7 +470,7 @@ export const siteContent = {
           "Multi-page Website Redesigns",
         ],
         image:
-          "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=2000&q=85",
+          "/image/web-design.jpg",
         imageAlt: "Designer workspace representing web design",
       },
       {
@@ -491,7 +491,7 @@ export const siteContent = {
           "Design Handoff for Developers",
         ],
         image:
-          "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=2000&q=85",
+          "/image/ui-ux-design.jpg",
         imageAlt: "Wireframes and interfaces representing UI/UX design",
       },
       {
@@ -512,7 +512,7 @@ export const siteContent = {
           "Editable Source Files and Asset Delivery",
         ],
         image:
-          "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=2000&q=85",
+          "/image/graphics-design.jpg",
         imageAlt: "Colorful design work representing graphics design",
       },
       {
@@ -533,7 +533,7 @@ export const siteContent = {
           "Monthly Performance Reports and Insights",
         ],
         image:
-          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=2000&q=85",
+          "/image/seo-analytics.jpg",
         imageAlt: "Analytics charts representing SEO performance",
       },
     ],
@@ -545,8 +545,8 @@ export const siteContent = {
       body:
         "We are a research-driven intelligence partner helping businesses explore innovation, understand markets, and stay informed in a competitive world.",
       image:
-        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=85",
-      imageAlt: "Contemporary glass office building",
+        "/image/office-interior.jpg",
+      imageAlt: "Modern bright office interior",
     },
     overview: {
       eyebrow: "COMPANY OVERVIEW",
