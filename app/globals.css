@@ -1109,7 +1109,9 @@ a {
 }
 
 .approach-section {
-  background: #fff;
+  background:
+    radial-gradient(900px 380px at 90% 100%, rgba(11, 108, 245, 0.08), transparent 55%),
+    linear-gradient(125deg, #f0f6ff 0%, #f8fbff 55%, #eaf3ff 100%);
 }
 
 .approach-grid {
