@@ -56,12 +56,12 @@ export default function ContactSection({ contact }) {
             <h3>How can we help?</h3>
           </div>
           <div className="form-two-col">
-            <label>Full name <span>*</span><input name="name" value={form.name} onChange={updateField} autoComplete="name" required maxLength={120} placeholder="Your full name" /></label>
-            <label>Business email <span>*</span><input name="email" type="email" value={form.email} onChange={updateField} autoComplete="email" required maxLength={254} placeholder="you@company.com" /></label>
+            <label><span className="label-text">Full name <span>*</span></span><input name="name" value={form.name} onChange={updateField} autoComplete="name" required maxLength={120} placeholder="Your full name" /></label>
+            <label><span className="label-text">Business email <span>*</span></span><input name="email" type="email" value={form.email} onChange={updateField} autoComplete="email" required maxLength={254} placeholder="you@company.com" /></label>
           </div>
           <div className="form-two-col">
             <label>Company<input name="company" value={form.company} onChange={updateField} autoComplete="organization" maxLength={180} placeholder="Company name" /></label>
-            <label>Service of interest <span>*</span>
+            <label><span className="label-text">Service of interest <span>*</span></span>
               <select name="service" value={form.service} onChange={updateField} required>
                 <option value="">Select a service</option>
                 <option>Patent Intelligence</option>
@@ -72,7 +72,7 @@ export default function ContactSection({ contact }) {
               </select>
             </label>
           </div>
-          <label>Tell us about your requirement <span>*</span><textarea name="message" value={form.message} onChange={updateField} required maxLength={5000} rows={5} placeholder="Share a little about your research question or business need..." /></label>
+          <label><span className="label-text">Tell us about your requirement <span>*</span></span><textarea name="message" value={form.message} onChange={updateField} required maxLength={5000} rows={5} placeholder="Share a little about your research question or business need..." /></label>
           <button className="button form-submit" type="submit" disabled={submitting}>
             {submitting ? "Sending enquiry..." : "Send Enquiry"} <span>↗</span>
           </button>

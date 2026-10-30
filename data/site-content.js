@@ -579,3 +579,4 @@ export const siteContent = {
       "Explore how VidenBridge can support your research, intellectual property, market intelligence, and technology monitoring needs.",
   },
 };
+  

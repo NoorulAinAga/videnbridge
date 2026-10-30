@@ -1396,7 +1396,14 @@ a {
   font-weight: 700;
 }
 
-.contact-form label > span {
+.contact-form .label-text {
+  display: block;
+  color: #2b4355;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.contact-form .label-text > span {
   display: inline;
   color: #d14c4c;
 }

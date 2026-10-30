@@ -1,7 +1,7 @@
 
 import nodemailer from "nodemailer";
 
-const CONTACT_TO = "aagaali703@gmail.com";
+const CONTACT_TO = "sadaf.fatima@videnbridge.com";
 
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
