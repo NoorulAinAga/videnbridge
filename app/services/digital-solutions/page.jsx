@@ -2,6 +2,7 @@ import { getSiteContent } from "@/lib/content";
 import ServicesBannerCarousel from "@/components/services/ServicesBannerCarousel";
 import ServicesQuickNav from "@/components/services/ServicesQuickNav";
 import ServiceDetail from "@/components/services/ServiceDetail";
+import WhyChooseUs from "@/components/services/WhyChooseUs";
 import FinalCta from "@/components/home/FinalCta";
 
 export async function generateMetadata() {
@@ -34,10 +35,11 @@ export default async function DigitalSolutionsPage() {
         <ServiceDetail
           key={service.anchorId}
           service={service}
-          alternate={index % 2 === 1}
+          alternate={index % 2 === 0}
           copy={digital.detail}
         />
       ))}
+      <WhyChooseUs content={digital.whyUs} />
       <FinalCta content={digital.finalCta} />
     </>
   );

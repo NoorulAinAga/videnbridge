@@ -67,6 +67,7 @@ export default function ContactSection({ contact }) {
                 <option>Patent Intelligence</option>
                 <option>Market Intelligence</option>
                 <option>Technology Watch</option>
+                <option>IT Solutions</option>
                 <option>Other / Not sure yet</option>
               </select>
             </label>

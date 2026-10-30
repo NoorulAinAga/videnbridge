@@ -30,14 +30,14 @@ export default async function ServicesPage() {
         services={services}
         extraLink={{
           ...servicesPage.digitalSolutionsLink,
-          icon: "🌐",
+          icon: "globe",
         }}
       />
       {services.map((service, index) => (
         <ServiceDetail
           key={service.anchorId}
           service={service}
-          alternate={index % 2 === 1}
+          alternate={index % 2 === 0}
           copy={servicesPage.detail}
         />
       ))}

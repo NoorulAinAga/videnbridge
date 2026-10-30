@@ -2,6 +2,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Icon from "@/components/Icon";
 
 export default function ServicesSection({ heading, services, extraService }) {
   const [selectedService, setSelectedService] = useState(null);
@@ -38,7 +39,7 @@ export default function ServicesSection({ heading, services, extraService }) {
           {services.map((service) => (
             <article className="service-card" key={service.number}>
               <div className="service-card-top">
-                <span className="service-icon">{service.icon}</span>
+                <span className="service-icon"><Icon name={service.icon} /></span>
                 <span className="service-number">{service.number}</span>
               </div>
 
@@ -65,7 +66,7 @@ export default function ServicesSection({ heading, services, extraService }) {
           {extraService && (
             <a className="service-card service-card-link" href={extraService.href}>
               <div className="service-card-top">
-                <span className="service-icon">{extraService.icon}</span>
+                <span className="service-icon"><Icon name={extraService.icon} /></span>
                 <span className="service-number">{extraService.number || "04"}</span>
               </div>
 
@@ -129,9 +130,10 @@ export default function ServicesSection({ heading, services, extraService }) {
                 <>
                   <h3>What We Offer</h3>
                   <ul className="service-modal-list">
-                    {selectedService.points.map((point) => (
-                      <li key={point}>{point}</li>
-                    ))}
+                    {selectedService.points.map((point) => {
+                      const label = typeof point === "string" ? point : point.title;
+                      return <li key={label}>{label}</li>;
+                    })}
                   </ul>
                 </>
               )}

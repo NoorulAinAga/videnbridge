@@ -30,7 +30,7 @@ export default async function AboutPage() {
           buttonLabel: "Contact Our Team",
         }}
       />
-      <ContactSection contact={content.contact} />
+    
     </>
   );
 }

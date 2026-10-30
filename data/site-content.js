@@ -84,19 +84,74 @@ export const siteContent = {
     services: [
       {
         number: "01",
-        icon: "◎",
+        icon: "target",
         title: "Patent Intelligence",
         subtitle: "Uncover innovation trends. Understand the competitive landscape.",
         description:
           "Explore patent landscapes, evaluate technology developments, benchmark competitors, and identify potential opportunities and risks.",
         points: [
-          "Patent Landscape Analysis",
-          "Patent Portfolio and Competitor Analysis",
-          "Patent Search & Due Diligence",
-          "Patent Commercialization",
-          "Technology Trend and Innovation Mapping",
-          "White-Space and Opportunity Identification",
-          "Patent Monitoring and Periodic Updates",
+          {
+            title: "Patent Landscape Analysis",
+            icon: "map",
+            
+          },
+          {
+            title: "Patent Portfolio and Competitor Analysis",
+            icon: "building",
+            // items: [
+            //   "Competitor portfolio benchmarking",
+            //   "Filing activity and R&D positioning",
+            //   "Portfolio strength and quality indicators",
+            //   "Collaboration and licensing signals",
+            // ],
+          },
+          {
+            title: "Patent Search & Due Diligence",
+            icon: "search",
+            items: [
+              "Novelty and state-of-the-art searches",
+              "Freedom-to-operate style screening",
+              "Invalidation and prior-art research",
+              "Risk and conflict identification",
+            ],
+          },
+          {
+            title: "Patent Commercialization",
+            icon: "briefcase",
+            // items: [
+            //   "Licensing opportunity identification",
+            //   "Potential buyers and collaborators",
+            //   "Claims-to-application mapping",
+            //   "Market readiness assessment",
+            // ],
+          },
+          {
+            title: "Technology Trend and Innovation Mapping",
+            icon: "trend",
+            // items: [
+            //   "Emerging technology signals",
+            //   "Innovation lifecycle stage assessment",
+            //   "Key innovators and research institutions",
+            // ],
+          },
+          {
+            title: "White-Space and Opportunity Identification",
+            icon: "bulb",
+            // items: [
+            //   "Unexplored technology areas",
+            //   "Gap analysis against competitor portfolios",
+            //   "R&D and filing opportunity recommendations",
+            // ],
+          },
+          {
+            title: "Patent Monitoring and Periodic Updates",
+            icon: "refresh",
+            // items: [
+            //   "Competitor publication tracking",
+            //   "Technology and assignee alerts",
+            //   "Monthly or quarterly digest reports",
+            // ],
+          },
         ],
         linkLabel: "Explore Patent Intelligence",
         image:
@@ -105,17 +160,57 @@ export const siteContent = {
       },
       {
         number: "02",
-        icon: "↗",
+        icon: "trend",
         title: "Market Intelligence",
         subtitle: "Understand your market. Identify opportunities. Make informed decisions.",
         description:
           "Tailored market research to assess industry developments, understand competitor positioning, evaluate emerging opportunities, and support evidence-based decisions.",
         points: [
-          "Industry and Market Landscape Analysis",
-          "Market Trends and Growth Assessment",
-          "Competitor Benchmarking and Profiling",
-          "Emerging Opportunity Identification",
-          "Technology and Market Opportunity Assessment",
+          {
+            title: "Industry and Market Landscape Analysis",
+            icon: "globe",
+            // items: [
+            //   "Market structure and segmentation",
+            //   "Value chain and ecosystem mapping",
+            //   "Regional market overview",
+            // ],
+          },
+          {
+            title: "Market Trends and Growth Assessment",
+            icon: "chart",
+            // items: [
+            //   "Market size and growth indicators",
+            //   "Demand drivers and restraints",
+            //   "Technology adoption trends",
+            // ],
+          },
+          {
+            title: "Competitor Benchmarking and Profiling",
+            icon: "scale",
+            // items: [
+            //   "Key player profiles and strategies",
+            //   "Product and service comparison",
+            //   "Strengths and positioning analysis",
+            // ],
+          },
+          {
+            title: "Emerging Opportunity Identification",
+            icon: "rocket",
+            // items: [
+            //   "New market entry points",
+            //   "Unmet needs and customer gaps",
+            //   "Partnership and investment signals",
+            // ],
+          },
+          {
+            title: "Technology and Market Opportunity Assessment",
+            icon: "compass",
+            // items: [
+            //   "Technology readiness vs market fit",
+            //   "Risk and opportunity comparison",
+            //   "Go-to-market recommendations",
+            // ],
+          },
         ],
         linkLabel: "Explore Market Research",
         image:
@@ -124,18 +219,66 @@ export const siteContent = {
       },
       {
         number: "03",
-        icon: "⌁",
+        icon: "activity",
         title: "Technology Watch",
         subtitle: "Stay informed. Anticipate change. Keep pace with innovation.",
         description:
           "Monthly and quarterly intelligence updates on selected technologies, competitors, and industry developments.",
         points: [
-          "Emerging Technology Developments",
-          "New Patent Publications and Innovation Activity",
-          "Competitor Technology Monitoring",
-          "Research and Industry Developments",
-          "Key Trends, Opportunities, and Potential Risks",
-          "Monthly or Quarterly Intelligence Reports",
+          {
+            title: "Emerging Technology Developments",
+            icon: "flask",
+            // items: [
+            //   "New technology announcements",
+            //   "Research breakthroughs",
+            //   "Prototype and product launches",
+            // ],
+          },
+          {
+            title: "New Patent Publications and Innovation Activity",
+            icon: "file",
+            // items: [
+            //   "Recent publications in focus domains",
+            //   "Filing and grant activity",
+            //   "Notable innovator movements",
+            // ],
+          },
+          {
+            title: "Competitor Technology Monitoring",
+            icon: "radar",
+            // items: [
+            //   "Competitor R&D activity",
+            //   "Product and strategy updates",
+            //   "Partnership and funding moves",
+            // ],
+          },
+          {
+            title: "Research and Industry Developments",
+            icon: "microscope",
+            // items: [
+            //   "Academic and research publications",
+            //   "Regulatory and standards updates",
+            //   "Industry events and collaborations",
+            // ],
+          },
+          {
+            title: "Key Trends, Opportunities, and Potential Risks",
+            icon: "alert",
+            // items: [
+            //   "Trend synthesis from period data",
+            //   "Opportunity signals",
+            //   "Risk and disruption indicators",
+            // ],
+          },
+          {
+            title: "Monthly or Quarterly Intelligence Reports",
+            icon: "calendar",
+            // items: [
+            //   "Structured executive summary",
+            //   "Visual charts and landscape maps",
+            //   "Action-oriented recommendations",
+            // ],
+          },
         ],
         linkLabel: "Explore Technology Watch",
         image:
@@ -176,25 +319,25 @@ export const siteContent = {
     approach: [
       {
         number: "01",
-        icon: "🎯",
+        icon: "target",
         title: "Understand Your Objectives",
         body: "We begin by understanding your business questions, research scope, technology interests, and desired outcomes.",
       },
       {
         number: "02",
-        icon: "🔎",
+        icon: "search",
         title: "Conduct Focused Research",
         body: "We identify and examine relevant patent, technical, market, and industry information based on the agreed scope.",
       },
       {
         number: "03",
-        icon: "📊",
+        icon: "chart",
         title: "Analyze and Develop Insights",
         body: "We organize findings to highlight relevant patterns, competitive developments, technology trends, and potential opportunities.",
       },
       {
         number: "04",
-        icon: "🚀",
+        icon: "rocket",
         title: "Deliver Decision-Ready Intelligence",
         body: "We present findings in a structured format suited to your requirements, with periodic reporting options for ongoing monitoring engagements.",
       },
@@ -226,7 +369,7 @@ export const siteContent = {
       buttonLabel: "Contact Our Team",
     },
     digitalSolutionsLink: {
-      icon: "🌐",
+      icon: "globe",
       eyebrow: "IT SolutionS",
       title: "IT Solutions",
       subtitle: "Development. Design. Growth.",
@@ -252,6 +395,34 @@ export const siteContent = {
       offeringsLabel: "What We Deliver",
       ctaLabel: "Start a Project",
     },
+    whyUs: {
+      eyebrow: "WHY CHOOSE US?",
+      title: "Your Trusted Partner for Digital Growth",
+      body:
+        "We combine creativity, technology, and strategy to deliver smart digital solutions that help your business grow and stand out.",
+      points: [
+        {
+          title: "Expertise Across Services",
+          body: "Complete IT and digital solutions under one roof.",
+        },
+        {
+          title: "Creative Approach",
+          body: "Unique designs that make your brand stand out.",
+        },
+        {
+          title: "User-Focused Design",
+          body: "Seamless and engaging digital experiences.",
+        },
+        {
+          title: "Growth-Driven Strategy",
+          body: "SEO solutions to improve your online visibility.",
+        },
+        {
+          title: "Quality & Reliability",
+          body: "High-quality work with dedicated support.",
+        },
+      ],
+    },
     finalCta: {
       eyebrow: "LET'S BUILD TOGETHER",
       title: "Ready to take your digital presence to the next level?",
@@ -262,7 +433,7 @@ export const siteContent = {
     services: [
       {
         number: "01",
-        icon: "💻",
+        icon: "monitor",
         title: "Website Development",
         subtitle: "Fast. Secure. Scalable. Built to grow with your business.",
         description:
@@ -283,7 +454,7 @@ export const siteContent = {
       },
       {
         number: "02",
-        icon: "🖥️",
+        icon: "layout",
         title: "Web Design",
         subtitle:
           "Clean layouts and visuals that communicate your brand instantly.",
@@ -304,7 +475,7 @@ export const siteContent = {
       },
       {
         number: "03",
-        icon: "✏️",
+        icon: "pen",
         title: "UI/UX Design",
         subtitle:
           "User experiences designed around real behavior and clarity.",
@@ -325,7 +496,7 @@ export const siteContent = {
       },
       {
         number: "04",
-        icon: "🎨",
+        icon: "layers",
         title: "Graphics Design",
         subtitle:
           "Brand visuals that make your business memorable everywhere.",
@@ -346,7 +517,7 @@ export const siteContent = {
       },
       {
         number: "05",
-        icon: "📈",
+        icon: "trend",
         title: "SEO",
         subtitle:
           "Get found on Google by the customers already searching for you.",

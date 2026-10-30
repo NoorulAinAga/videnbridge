@@ -889,6 +889,28 @@ a {
   font-size: 27px;
 }
 
+/* Inline SVG icon sizing */
+
+.service-icon svg.icon {
+  width: 26px;
+  height: 26px;
+}
+
+.services-quick-link .service-icon svg.icon {
+  width: 21px;
+  height: 21px;
+}
+
+.offer-icon svg.icon {
+  width: 18px;
+  height: 18px;
+}
+
+.approach-icon svg.icon {
+  width: 22px;
+  height: 22px;
+}
+
 .service-number {
   color: #a6b6c0;
   font-size: 12px;
@@ -950,6 +972,49 @@ a {
 .why-section {
   background: linear-gradient(125deg, #03172b, #0b2d4c);
   color: white;
+}
+
+/* Light blue brand variant (Why Choose Us on digital page) */
+
+.why-section-brand {
+  background:
+    radial-gradient(1000px 380px at 12% 110%, rgba(11, 108, 245, 0.14), transparent 55%),
+    linear-gradient(125deg, #d9e9ff 0%, #e6f0ff 50%, #dcecff 100%);
+  color: var(--ink);
+  border-top: 1px solid rgba(11, 108, 245, 0.18);
+  border-bottom: 1px solid rgba(11, 108, 245, 0.18);
+}
+
+.why-section-brand .eyebrow-light {
+  color: var(--teal-dark);
+}
+
+.why-section-brand .why-intro .section-title {
+  color: var(--navy);
+}
+
+.why-section-brand .why-intro > p:not(.eyebrow) {
+  color: #425d70;
+}
+
+.why-section-brand .why-list {
+  border-top-color: rgba(11, 108, 245, 0.22);
+}
+
+.why-section-brand .why-item {
+  border-bottom-color: rgba(11, 108, 245, 0.22);
+}
+
+.why-section-brand .why-item h3 {
+  color: var(--navy);
+}
+
+.why-section-brand .why-item p {
+  color: #425d70;
+}
+
+.why-section-brand .why-index {
+  color: var(--teal-dark);
 }
 
 .why-grid {
@@ -2264,6 +2329,145 @@ a {
   grid-template-columns: 1.05fr 0.95fr;
   gap: 80px;
   align-items: start;
+}
+
+/* Light blue brand section (white -> blue -> white rhythm) */
+
+.section-brand {
+  background:
+    radial-gradient(1100px 420px at 15% -10%, rgba(11, 108, 245, 0.1), transparent 60%),
+    linear-gradient(140deg, #eaf3ff 0%, #f4f9ff 55%, #ffffff 100%);
+}
+
+.service-detail-section .service-detail-points {
+  background: white;
+}
+
+/* What We Offer — expandable items */
+
+.service-detail-offer {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.offer-item {
+  padding: 13px 16px;
+  border: 1px solid var(--line);
+  border-radius: 9px 9px 9px 3px;
+  background: #fbfdff;
+  transition:
+    border-color 0.22s ease,
+    box-shadow 0.22s ease,
+    transform 0.22s ease;
+}
+
+.offer-item:hover {
+  border-color: rgba(11, 108, 245, 0.45);
+  background: white;
+  box-shadow: 0 12px 26px rgba(10, 44, 67, 0.08);
+  transform: translateX(3px);
+}
+
+.offer-plain {
+  position: relative;
+  padding: 10px 4px 10px 28px;
+  color: #526879;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.offer-plain::before {
+  position: absolute;
+  left: 8px;
+  color: var(--teal);
+  content: "•";
+  font-weight: 800;
+}
+
+.offer-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.offer-icon {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  place-items: center;
+  border: 1px solid rgba(11, 108, 245, 0.28);
+  border-radius: 10px 10px 10px 3px;
+  background: rgba(11, 108, 245, 0.08);
+  font-size: 17px;
+  transition:
+    background 0.22s ease,
+    color 0.22s ease;
+}
+
+.offer-item:hover .offer-icon {
+  background: var(--teal);
+  color: white;
+}
+
+.offer-head strong {
+  color: var(--navy);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.offer-toggle {
+  display: inline-block;
+  margin-left: auto;
+  color: var(--teal);
+  font-size: 10px;
+  transition: transform 0.25s ease;
+}
+
+.offer-item:hover .offer-toggle {
+  transform: rotate(180deg);
+}
+
+.offer-sub {
+  display: grid;
+  gap: 7px;
+  max-height: 0;
+  margin: 0;
+  padding-left: 48px;
+  overflow: hidden;
+  opacity: 0;
+  list-style: none;
+  transition:
+    max-height 0.35s ease,
+    opacity 0.25s ease,
+    margin 0.35s ease;
+}
+
+.offer-item:hover .offer-sub,
+.offer-item:focus-within .offer-sub {
+  max-height: 300px;
+  margin-top: 11px;
+  opacity: 1;
+}
+
+.offer-sub li {
+  position: relative;
+  padding-left: 15px;
+  color: #526879;
+  font-size: 12.5px;
+  line-height: 1.55;
+}
+
+.offer-sub li::before {
+  position: absolute;
+  left: 0;
+  color: var(--teal);
+  content: "›";
+  font-weight: 800;
 }
 
 .service-detail-copy .service-detail-top {

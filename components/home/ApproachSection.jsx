@@ -1,3 +1,5 @@
+import Icon from "@/components/Icon";
+
 export default function ApproachSection({ items }) {
   return (
     <section className="section approach-section" id="approach">
@@ -12,7 +14,7 @@ export default function ApproachSection({ items }) {
             <article className="approach-card" key={item.number}>
               <div className="approach-card-top">
                 {/* <span className="approach-number">{item.number}</span> */}
-                <span className="approach-icon" aria-hidden="true">{item.icon}</span>
+                <span className="approach-icon" aria-hidden="true"><Icon name={item.icon} /></span>
               </div>
               <div className="approach-line" />
               <h3>{item.title}</h3>
