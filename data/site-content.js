@@ -11,6 +11,7 @@ export const siteContent = {
   navigation: [
     { label: "Home", href: "/" },
     { label: "About Us", href: "/about" },
+    { label: "Industries", href: "/industries" },
     {
       label: "Services",
       href: "/services",
@@ -109,10 +110,11 @@ export const siteContent = {
             title: "Patent Search & Due Diligence",
             icon: "search",
             items: [
-              "Novelty and state-of-the-art searches",
-              "Freedom-to-operate style screening",
-              "Invalidation and prior-art research",
-              "Risk and conflict identification",
+              "Patentability & Prior Art Search",
+              "Patent Validity & Invalidity Search",
+              "Freedom to Operate (FTO) Search",
+              "Design Patent & Industrial Design Search",
+              "Assignee Based Search"
             ],
           },
           {
@@ -537,6 +539,358 @@ export const siteContent = {
         imageAlt: "Analytics charts representing SEO performance",
       },
     ],
+  },
+  industriesPage: {
+    metadata: {
+      title: "Industries We Serve | VidenBridge",
+      description:
+        "Explore the industries VidenBridge supports through Patent Intelligence, Market Intelligence, Technology Watch and Digital Solutions.",
+    },
+    slides: [
+      {
+        eyebrow: "INDUSTRIES WE SERVE",
+        title: "Industries We Serve",
+        tagline: "Connecting Industry Knowledge with Innovation and Intelligence",
+        description:
+          "Every industry faces unique challenges, evolving technologies, and changing market dynamics. VidenBridge helps businesses navigate these complexities through specialized Patent Intelligence, Market Intelligence, Technology Watch, and Digital Solutions.",
+        image: "/image/office-glass-building.jpg",
+        imageAlt: "Modern glass office building representing industry expertise",
+        primaryCta: { label: "Explore Our Expertise", href: "#industries" },
+        secondaryCta: { label: "Discuss Your Industry Needs", href: "/contact-us" },
+      },
+      {
+        eyebrow: "INDUSTRIES WE SERVE — 02",
+        title: "Automotive & Mobility",
+        tagline: "Driving Innovation in the Future of Mobility",
+        description:
+          "The automotive industry is experiencing a significant transformation driven by electric vehicles, autonomous driving, connected mobility, advanced manufacturing, and sustainable transportation. VidenBridge supports manufacturers, technology developers, and suppliers through patent research, technology monitoring, and market intelligence.",
+        image: "/image/hero-technology-network.jpg",
+        imageAlt: "Digital network representing automotive technology intelligence",
+        primaryCta: { label: "Explore Automotive", href: "#automotive" },
+        secondaryCta: { label: "Discuss Your Industry Needs", href: "/contact-us" },
+      },
+      {
+        eyebrow: "INDUSTRIES WE SERVE — 03",
+        title: "Healthcare & Medical Devices",
+        tagline: "Advancing Healthcare Through Technology Intelligence",
+        description:
+          "Healthcare innovation continues to evolve through medical devices, digital health technologies, diagnostic solutions, medical imaging, and advanced treatment systems. VidenBridge helps healthcare innovators explore patent landscapes, identify emerging technologies, and understand market developments.",
+        image: "/image/team-strategy.jpg",
+        imageAlt: "Team analyzing healthcare technology strategy",
+        primaryCta: { label: "Explore Healthcare", href: "#healthcare" },
+        secondaryCta: { label: "Discuss Your Industry Needs", href: "/contact-us" },
+      },
+      {
+        eyebrow: "INDUSTRIES WE SERVE — 04",
+        title: "IT & Telecommunications",
+        tagline: "Navigating the Rapid Evolution of Digital Technologies",
+        description:
+          "The information technology and telecommunications sectors are continuously evolving through artificial intelligence, cloud computing, cybersecurity, connected devices, and next-generation communication networks. VidenBridge provides technology intelligence, patent research, and market insights.",
+        image: "/image/circuit-board.jpg",
+        imageAlt: "Technology circuit board representing IT innovation",
+        primaryCta: { label: "Explore IT & Telecom", href: "#it-telecommunications" },
+        secondaryCta: { label: "Discuss Your Industry Needs", href: "/contact-us" },
+      },
+    ],
+    overview: {
+      eyebrow: "INDUSTRY OVERVIEW",
+      title: "Industry Expertise Across Diverse Sectors.",
+      body:
+        "We work across diverse industries, understanding their technological developments, competitive environments, and evolving business requirements. Our research-driven approach helps organizations identify emerging opportunities, evaluate innovation landscapes, monitor competitors, and make informed strategic decisions.",
+      closing:
+        "From emerging technologies and intellectual property developments to competitive landscapes and market opportunities, we transform complex information into actionable insights that support smarter decisions, strengthen innovation strategies, and drive sustainable business growth.",
+    },
+    heading: {
+      eyebrow: "INDUSTRIES WE SERVE",
+      title: "Supporting Innovation Across Industries",
+      lead:
+        "Select an industry to explore its technology landscape and focus areas.",
+    },
+    detailHeading: {
+      eyebrow: "DETAILED INDUSTRY EXPERTISE",
+      title: "Knowledge for the sectors shaping tomorrow.",
+      lead:
+        "Explore the technology domains and market developments where focused research and intelligence can support better-informed decisions.",
+    },
+    industries: [
+      {
+        number: "01",
+        anchorId: "automotive",
+        icon: "trend",
+        title: "Automotive & Mobility",
+        subtitle: "Driving Innovation in the Future of Mobility",
+        description:
+          "The automotive industry is experiencing a significant transformation driven by electric vehicles, autonomous driving, connected mobility, advanced manufacturing, and sustainable transportation. As technology continues to reshape vehicle design and mobility solutions, businesses must stay informed about emerging innovations and competitive developments.",
+        description2:
+          "VidenBridge supports automotive manufacturers, technology developers, suppliers, and innovators through patent research, technology monitoring, and market intelligence.",
+        focus: [
+          "Electric Vehicles (EVs) & Hybrid Technologies",
+          "Battery Systems & Energy Storage",
+          "Autonomous & Connected Vehicles",
+          "Advanced Driver Assistance Systems (ADAS)",
+          "Automotive Electronics & Software",
+          "Lightweight Materials & Vehicle Engineering",
+          "Smart Mobility & Transportation Solutions",
+        ],
+      },
+      {
+        number: "02",
+        anchorId: "healthcare",
+        icon: "activity",
+        title: "Healthcare & Medical Devices",
+        subtitle: "Advancing Healthcare Through Technology Intelligence",
+        description:
+          "Healthcare innovation continues to evolve through medical devices, digital health technologies, diagnostic solutions, medical imaging, and advanced treatment systems. Understanding technological advancements and the competitive landscape is essential for organizations developing next-generation healthcare solutions.",
+        description2:
+          "VidenBridge helps healthcare innovators and medical technology businesses explore patent landscapes, identify emerging technologies, and understand market developments.",
+        focus: [
+          "Medical Devices & Equipment",
+          "Diagnostic & Imaging Technologies",
+          "Digital Health & Telemedicine",
+          "Wearable Healthcare Technologies",
+          "Surgical Instruments & Robotics",
+          "Remote Patient Monitoring",
+          "Healthcare Technology Innovation",
+        ],
+      },
+      {
+        number: "03",
+        anchorId: "pharma",
+        icon: "flask",
+        title: "Pharmaceuticals & Biotechnology",
+        subtitle: "Supporting Breakthroughs in Pharmaceutical and Biotech Innovation",
+        description:
+          "The pharmaceutical and biotechnology industries are driven by continuous research, scientific discoveries, and evolving intellectual property landscapes. Organizations must navigate complex patent environments, emerging research trends, competitive developments, and commercialization opportunities.",
+        description2:
+          "VidenBridge provides research and intelligence support to help pharmaceutical companies, biotechnology firms, and research organizations understand innovation trends and make informed strategic decisions.",
+        focus: [
+          "Drug Discovery & Development",
+          "Pharmaceutical Formulations",
+          "Biologics & Biosimilars",
+          "Biotechnology Innovations",
+          "Gene & Cell-Based Technologies",
+          "Vaccines & Therapeutic Solutions",
+          "Pharmaceutical Patent Landscapes",
+        ],
+      },
+      {
+        number: "04",
+        anchorId: "electronics",
+        icon: "monitor",
+        title: "Electronics & Semiconductors",
+        subtitle: "Empowering the Next Generation of Electronic Innovation",
+        description:
+          "The electronics and semiconductor industries are at the center of technological advancement. Rapid developments in chip architecture, electronic components, artificial intelligence hardware, sensors, and advanced semiconductor manufacturing are creating new opportunities and competitive challenges.",
+        description2:
+          "VidenBridge helps businesses monitor technology developments, analyze patent activity, and understand the competitive landscape across electronic and semiconductor technologies.",
+        focus: [
+          "Semiconductor Devices & Chip Design",
+          "Integrated Circuits & Microprocessors",
+          "Advanced Packaging Technologies",
+          "Sensors & Electronic Components",
+          "Artificial Intelligence Hardware",
+          "Consumer Electronics",
+          "Printed & Flexible Electronics",
+        ],
+      },
+      {
+        number: "05",
+        anchorId: "materials",
+        icon: "layers",
+        title: "Chemicals & Advanced Materials",
+        subtitle: "Exploring Innovation in Chemical and Material Science",
+        description:
+          "Advancements in chemical engineering and material science are transforming industries through the development of high-performance materials, advanced polymers, specialty chemicals, and sustainable alternatives. Identifying emerging technologies and understanding intellectual property developments are essential for maintaining competitiveness.",
+        description2:
+          "VidenBridge supports businesses in exploring innovation trends, evaluating patent landscapes, and identifying opportunities across chemical and material technologies.",
+        focus: [
+          "Specialty & Industrial Chemicals",
+          "Advanced Polymers & Composites",
+          "Nanotechnology & Nanomaterials",
+          "Sustainable & Bio-Based Materials",
+          "Coatings & Surface Technologies",
+          "Advanced Functional Materials",
+          "Material Recycling & Recovery",
+        ],
+      },
+      {
+        number: "06",
+        anchorId: "energy",
+        icon: "bulb",
+        title: "Energy & Renewable Technologies",
+        subtitle: "Powering the Transition Toward Sustainable Energy",
+        description:
+          "The global energy landscape is evolving through renewable energy adoption, energy storage innovation, electrification, and clean technology development. Businesses must continuously evaluate technological progress, market opportunities, and emerging competitive trends.",
+        description2:
+          "VidenBridge helps organizations monitor energy innovations, explore patent developments, and understand the evolving renewable energy and sustainability landscape.",
+        focus: [
+          "Solar & Photovoltaic Technologies",
+          "Wind Energy Systems",
+          "Battery & Energy Storage Solutions",
+          "Hydrogen & Fuel Cell Technologies",
+          "Smart Grids & Energy Management",
+          "Electric Power Generation",
+          "Clean Energy & Carbon Reduction Technologies",
+        ],
+      },
+      {
+        number: "07",
+        anchorId: "it-telecommunications",
+        icon: "globe",
+        title: "Information Technology & Telecommunications",
+        subtitle: "Navigating the Rapid Evolution of Digital Technologies",
+        description:
+          "The information technology and telecommunications sectors are continuously evolving through artificial intelligence, cloud computing, cybersecurity, connected devices, and next-generation communication networks. Staying ahead requires continuous monitoring of technology developments and competitive activity.",
+        description2:
+          "VidenBridge provides technology intelligence, patent research, and market insights that help businesses understand emerging digital innovations and identify new opportunities.",
+        focus: [
+          "Artificial Intelligence & Machine Learning",
+          "Cloud Computing & Data Technologies",
+          "Cybersecurity & Information Security",
+          "Internet of Things (IoT)",
+          "5G & Next-Generation Networks",
+          "Software & Enterprise Technologies",
+          "Blockchain & Distributed Systems",
+        ],
+      },
+      {
+        number: "08",
+        anchorId: "aerospace",
+        icon: "rocket",
+        title: "Aerospace & Defence",
+        subtitle: "Supporting Innovation in Advanced Aerospace Technologies",
+        description:
+          "Aerospace and defence technologies are advancing through developments in propulsion systems, advanced materials, avionics, autonomous systems, satellite technologies, and engineering solutions. Understanding these developments is essential for organizations operating in highly technology-driven and competitive environments.",
+        description2:
+          "VidenBridge supports technology research and competitive intelligence initiatives to help businesses understand emerging innovations and technological developments.",
+        focus: [
+          "Aircraft & Aerospace Engineering",
+          "Propulsion & Engine Technologies",
+          "Satellite & Space Technologies",
+          "Autonomous Aerial Systems",
+          "Advanced Aerospace Materials",
+          "Avionics & Navigation Systems",
+          "Defence & Security Technologies",
+        ],
+      },
+      {
+        number: "09",
+        anchorId: "manufacturing",
+        icon: "building",
+        title: "Manufacturing & Industrial Engineering",
+        subtitle: "Transforming Industrial Capabilities Through Innovation",
+        description:
+          "Manufacturing and industrial engineering are undergoing significant changes through automation, robotics, smart manufacturing, industrial IoT, and advanced production technologies. Businesses must understand evolving technologies and competitive developments to improve efficiency and maintain their market position.",
+        description2:
+          "VidenBridge helps industrial organizations explore technology advancements, analyze patent activity, and identify opportunities for innovation and operational improvement.",
+        focus: [
+          "Industrial Automation & Robotics",
+          "Smart Manufacturing & Industry 4.0",
+          "Advanced Manufacturing Processes",
+          "Industrial Equipment & Machinery",
+          "Additive Manufacturing & 3D Printing",
+          "Predictive Maintenance Technologies",
+          "Process Optimization & Engineering",
+        ],
+      },
+      {
+        number: "10",
+        anchorId: "consumer",
+        icon: "briefcase",
+        title: "Consumer Goods, Retail & Packaging",
+        subtitle: "Understanding Consumer Trends and Product Innovation",
+        description:
+          "Consumer goods, retail, and packaging businesses operate in rapidly changing markets shaped by evolving customer expectations, product innovation, sustainability, and digital transformation. Understanding consumer preferences, market movements, and competitive strategies is essential for developing successful products and strengthening brand positioning.",
+        description2:
+          "VidenBridge supports businesses through market research, competitive intelligence, patent analysis, and technology monitoring to help identify emerging trends and innovation opportunities.",
+        focus: [
+          "Consumer Product Innovation",
+          "Food & Beverage Technologies",
+          "Sustainable & Smart Packaging",
+          "Personal Care & Cosmetics",
+          "Retail & E-commerce Technologies",
+          "Product Design & Development",
+          "Consumer Market & Competitor Analysis",
+        ],
+      },
+    ],
+    capabilitiesHeading: {
+      eyebrow: "OUR CAPABILITIES",
+      title: "Intelligence and digital solutions that move businesses forward.",
+      lead:
+        "Regardless of the industry, businesses need reliable information, technological awareness, and effective digital capabilities to remain competitive. VidenBridge combines specialized research and technology-focused services to support organizations at different stages of their business and innovation journeys.",
+    },
+    capabilities: [
+      {
+        number: "01",
+        tag: "RESEARCH",
+        icon: "target",
+        title: "Patent Intelligence",
+        body:
+          "Understand the intellectual property landscape, analyze patent activity, identify technological trends, and explore innovation opportunities through structured patent research and analysis.",
+      },
+      {
+        number: "02",
+        tag: "MARKET",
+        icon: "chart",
+        title: "Market Intelligence",
+        body:
+          "Gain insights into industry developments, market dynamics, competitor strategies, customer trends, and emerging business opportunities to support informed decision-making.",
+      },
+      {
+        number: "03",
+        tag: "MONITORING",
+        icon: "activity",
+        title: "Technology Watch",
+        body:
+          "Stay informed about emerging technologies, competitor innovations, research developments, and industry advancements through continuous technology monitoring and intelligence reporting.",
+      },
+      {
+        number: "04",
+        tag: "DIGITAL",
+        icon: "monitor",
+        title: "Digital Solutions",
+        body:
+          "Strengthen your digital presence through website development, web design, UI/UX design, graphic design, and SEO solutions aligned with your business objectives.",
+      },
+    ],
+    why: {
+      eyebrow: "WHY VIDENBRIDGE?",
+      title: "Your partner in research, innovation and digital growth.",
+      body:
+        "Every industry has its own challenges, but the need for reliable intelligence and informed decision-making remains universal.",
+      body2:
+        "At VidenBridge, we combine research-driven thinking, industry awareness, and technology-focused capabilities to help businesses move forward with greater clarity and confidence.",
+      points: [
+        {
+          title: "Industry-Oriented Approach",
+          body: "We consider the unique technological, competitive, and business requirements of different industry sectors.",
+        },
+        {
+          title: "Research-Driven Insights",
+          body: "We transform complex patent, market, and technology information into structured insights that support strategic decisions.",
+        },
+        {
+          title: "Innovation-Focused Perspective",
+          body: "We help businesses understand emerging developments, evaluate opportunities, and stay informed about technological advancements.",
+        },
+        {
+          title: "Integrated Capabilities",
+          body: "Our combination of intelligence research and digital solutions provides support across multiple business requirements.",
+        },
+        {
+          title: "Business-Focused Solutions",
+          body: "We align our research and digital capabilities with practical business objectives and evolving organizational needs.",
+        },
+      ],
+    },
+    finalCta: {
+      eyebrow: "LET'S EXPLORE NEW OPPORTUNITIES TOGETHER",
+      title: "Turn Industry Challenges into Opportunities for Growth.",
+      body:
+        "Whether you are exploring a new technology, evaluating a competitive landscape, monitoring industry developments, or strengthening your digital presence, VidenBridge is ready to support your business objectives. Let's discuss your industry requirements and discover how our intelligence and digital capabilities can help you move forward.",
+      buttonLabel: "Talk to Our Experts",
+    },
   },
   about: {
     hero: {

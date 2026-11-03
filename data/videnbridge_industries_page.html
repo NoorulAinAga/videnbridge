@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Explore the industries VidenBridge supports through Patent Intelligence, Market Intelligence, Technology Watch and Digital Solutions.">
+<title>Industries We Serve | VidenBridge</title>
+<style>
+:root{
+  --ink:#101c2c; --ink2:#17283b; --paper:#f5f7f8; --white:#fff;
+  --muted:#617184; --line:#dce3e8; --accent:#b9e36a; --accent2:#dff3b5;
+  --blue:#8eb9d1; --max:1180px; --radius:22px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(var(--max),calc(100% - 48px));margin:auto}
+.topbar{background:var(--ink);color:#fff;border-bottom:1px solid rgba(255,255,255,.12)}
+.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{font-size:22px;font-weight:750;letter-spacing:-.8px}
+.brand span{color:var(--accent)}
+.navlinks{display:flex;gap:30px;align-items:center;font-size:13px;color:#d2dbe3}
+.navlinks a:hover{color:var(--accent)}
+.navcta{padding:11px 17px;border:1px solid rgba(255,255,255,.35);border-radius:99px;color:#fff}
+.hero{background:var(--ink);color:#fff;padding:92px 0 82px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;width:590px;height:590px;border:1px solid rgba(185,227,106,.18);border-radius:50%;right:-110px;top:-260px;box-shadow:0 0 0 55px rgba(185,227,106,.035),0 0 0 110px rgba(185,227,106,.025)}
+.hero:after{content:"";position:absolute;width:240px;height:240px;border-radius:50%;background:rgba(142,185,209,.09);right:13%;bottom:-160px;filter:blur(2px)}
+.eyebrow{font-size:11px;letter-spacing:2.2px;text-transform:uppercase;font-weight:750;color:#a8c0d0}
+.hero h1{font-size:clamp(42px,6vw,76px);line-height:1.02;letter-spacing:-3.5px;max-width:850px;margin:20px 0}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero p{max-width:760px;color:#c4d0da;font-size:17px;line-height:1.8;margin:0}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:99px;font-size:13px;font-weight:700;transition:.2s}
+.btn.primary{background:var(--accent);color:var(--ink)}
+.btn.primary:hover{background:#d1f28c;transform:translateY(-2px)}
+.btn.secondary{border:1px solid rgba(255,255,255,.32);color:#fff}
+.btn.secondary:hover{border-color:var(--accent);color:var(--accent)}
+.hero-meta{display:flex;gap:30px;flex-wrap:wrap;margin-top:62px;padding-top:23px;border-top:1px solid rgba(255,255,255,.16);color:#aebdca;font-size:12px}
+.hero-meta strong{color:#fff;font-weight:650}
+.intro{padding:82px 0 54px;display:grid;grid-template-columns:.85fr 1.15fr;gap:60px;align-items:start}
+.kicker{color:#6c8797;text-transform:uppercase;letter-spacing:1.8px;font-size:10px;font-weight:800}
+h2{font-size:clamp(30px,4vw,46px);line-height:1.12;letter-spacing:-1.8px;margin:13px 0 18px}
+.intro p{color:var(--muted);font-size:15px;margin:6px 0 0;max-width:690px}
+.industry-nav{padding:0 0 72px}
+.nav-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:20px}
+.nav-head h2{font-size:27px;margin:8px 0 0}
+.nav-head p{color:var(--muted);font-size:13px;margin:0}
+.pills{display:flex;flex-wrap:wrap;gap:9px}
+.pill{background:#fff;border:1px solid var(--line);border-radius:99px;padding:10px 15px;font-size:12px;font-weight:650;color:#405267;transition:.2s}
+.pill:hover{background:var(--ink);border-color:var(--ink);color:#fff}
+.sectors{padding:78px 0;background:#eaf0f2}
+.section-top{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:34px}
+.section-top p{max-width:430px;color:var(--muted);font-size:14px;margin:0}
+.sector-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.sector{background:#fff;border:1px solid #e1e7ea;border-radius:var(--radius);padding:30px;scroll-margin-top:24px;display:flex;flex-direction:column;min-height:100%}
+.sector-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:23px}
+.num{font-size:11px;letter-spacing:1.5px;color:#7e919f;font-weight:800}
+.symbol{width:42px;height:42px;border-radius:13px;background:#eff5e4;display:grid;place-items:center;color:#45622a;font-size:18px}
+.sector h3{font-size:24px;line-height:1.2;letter-spacing:-.8px;margin:0 0 7px}
+.sector h4{font-size:13px;color:#547080;margin:0 0 14px;font-weight:700}
+.sector p{font-size:13px;line-height:1.75;color:#657486;margin:0 0 22px}
+.focus-label{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#82929e;font-weight:800;margin-bottom:11px}
+.focus{display:flex;flex-wrap:wrap;gap:7px;margin-top:auto}
+.focus span{font-size:11px;color:#415366;background:#f2f5f6;border:1px solid #e7ecef;padding:7px 10px;border-radius:7px}
+.capabilities{padding:86px 0;background:var(--ink);color:#fff}
+.capabilities .kicker{color:#a9c3d2}
+.capabilities h2{max-width:650px}
+.cap-intro{color:#b9c6d0;max-width:700px;font-size:14px}
+.cap-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:38px}
+.cap{border:1px solid rgba(255,255,255,.16);border-radius:17px;padding:23px;min-height:205px;background:rgba(255,255,255,.035)}
+.cap .n{font-size:11px;color:var(--accent);letter-spacing:1.3px}
+.cap h3{font-size:17px;margin:23px 0 9px}
+.cap p{font-size:12px;color:#b9c6d0;line-height:1.7;margin:0}
+.why{padding:84px 0}
+.why-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:65px}
+.why-layout>div:first-child p{color:var(--muted);font-size:14px;max-width:430px}
+.why-list{display:grid;grid-template-columns:1fr 1fr;gap:24px 30px}
+.why-item{border-top:1px solid var(--line);padding-top:16px}
+.why-item h3{font-size:15px;margin:0 0 7px}
+.why-item p{font-size:12px;color:var(--muted);line-height:1.7;margin:0}
+.cta{background:var(--accent);padding:66px 0}
+.cta-inner{display:flex;justify-content:space-between;align-items:center;gap:30px}
+.cta .kicker{color:#50652e}
+.cta h2{max-width:700px;margin-bottom:10px}
+.cta p{color:#435331;font-size:14px;max-width:690px;margin:0}
+.cta .btn{background:var(--ink);color:#fff;white-space:nowrap}
+.footer{background:#0b1522;color:#dce5eb;padding:44px 0 25px}
+.footer-top{display:flex;justify-content:space-between;gap:30px;padding-bottom:35px}
+.footer p{font-size:12px;color:#91a1ae;max-width:390px}
+.footer-links{display:flex;gap:23px;flex-wrap:wrap;font-size:12px;color:#bdc9d2}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:18px;display:flex;justify-content:space-between;gap:20px;color:#8797a5;font-size:11px}
+@media(max-width:850px){
+ .intro,.why-layout{grid-template-columns:1fr;gap:22px}
+ .cap-grid{grid-template-columns:repeat(2,1fr)}
+ .navlinks{gap:14px}
+}
+@media(max-width:620px){
+ .wrap{width:min(100% - 32px,var(--max))}
+ .nav{height:68px}.navlinks a:not(.navcta){display:none}
+ .hero{padding:70px 0 55px}.hero h1{letter-spacing:-2px}
+ .hero-meta{gap:14px;margin-top:42px}
+ .intro{padding:58px 0 35px}
+ .industry-nav{padding-bottom:52px}
+ .nav-head,.section-top,.cta-inner,.footer-top,.footer-bottom{align-items:flex-start;flex-direction:column}
+ .sectors{padding:58px 0}
+ .sector-grid{grid-template-columns:1fr}
+ .sector{padding:24px}
+ .capabilities{padding:62px 0}
+ .cap-grid{grid-template-columns:1fr 1fr}
+ .why{padding:62px 0}
+ .why-list{grid-template-columns:1fr}
+ .cta{padding:52px 0}
+}
+@media(max-width:390px){.cap-grid{grid-template-columns:1fr}.hero h1{font-size:40px}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap nav">
+    <a class="brand" href="#" aria-label="VidenBridge home">Viden<span>Bridge</span></a>
+    <nav class="navlinks" aria-label="Main navigation">
+      <a href="#">Home</a><a href="#industries">Industries</a><a href="#capabilities">Services</a><a href="#why">About</a>
+      <a class="navcta" href="mailto:enquiries@videnbridge.com">Let's talk ↗</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Industry expertise · Research · Innovation</div>
+    <h1>Industries We <em>Serve</em></h1>
+    <p>Connecting industry knowledge with innovation and intelligence. Every industry faces unique challenges, evolving technologies, and changing market dynamics. VidenBridge helps businesses navigate these complexities through specialized Patent Intelligence, Market Intelligence, Technology Watch, and Digital Solutions.</p>
+    <div class="actions">
+      <a class="btn primary" href="#industries">Explore Our Expertise ↓</a>
+      <a class="btn secondary" href="mailto:enquiries@videnbridge.com?subject=Industry%20requirements">Discuss Your Industry Needs ↗</a>
+    </div>
+    <div class="hero-meta">
+      <span><strong>10</strong> industry sectors</span>
+      <span><strong>4</strong> integrated capabilities</span>
+      <span><strong>Research-led</strong> perspective</span>
+    </div>
+  </div>
+</section>
+
+<section class="wrap intro">
+  <div>
+    <div class="kicker">01 / Industry overview</div>
+    <h2>Industry expertise across diverse sectors.</h2>
+  </div>
+  <div>
+    <p>We work across diverse industries, understanding their technological developments, competitive environments, and evolving business requirements. Our research-driven approach helps organizations identify emerging opportunities, evaluate innovation landscapes, monitor competitors, and make informed strategic decisions.</p>
+  </div>
+</section>
+
+<section class="wrap industry-nav" aria-label="Jump to an industry">
+  <div class="nav-head">
+    <div><div class="kicker">Explore the sectors</div><h2>Supporting innovation across industries</h2></div>
+    <p>Select an industry to explore its technology landscape and focus areas.</p>
+  </div>
+  <div class="pills">
+    <a class="pill" href="#automotive">01 Automotive & Mobility</a>
+    <a class="pill" href="#healthcare">02 Healthcare & Medical Devices</a>
+    <a class="pill" href="#pharma">03 Pharmaceuticals & Biotechnology</a>
+    <a class="pill" href="#electronics">04 Electronics & Semiconductors</a>
+    <a class="pill" href="#materials">05 Chemicals & Advanced Materials</a>
+    <a class="pill" href="#energy">06 Energy & Renewable Technologies</a>
+    <a class="pill" href="#it">07 IT & Telecommunications</a>
+    <a class="pill" href="#aerospace">08 Aerospace & Defence</a>
+    <a class="pill" href="#manufacturing">09 Manufacturing & Industrial Engineering</a>
+    <a class="pill" href="#consumer">10 Consumer Goods, Retail & Packaging</a>
+  </div>
+</section>
+
+<section class="sectors" id="industries">
+ <div class="wrap">
+  <div class="section-top">
+    <div><div class="kicker">02 / Detailed industry expertise</div><h2>Knowledge for the sectors shaping tomorrow.</h2></div>
+    <p>Explore the technology domains and market developments where focused research and intelligence can support better-informed decisions.</p>
+  </div>
+  <div class="sector-grid">
+   <article class="sector" id="automotive">
+    <div class="sector-head"><span class="num">INDUSTRY 01</span><span class="symbol">↗</span></div>
+    <h3>Automotive & Mobility</h3><h4>Driving innovation in the future of mobility</h4>
+    <p>The automotive industry is being reshaped by electric vehicles, autonomous driving, connected mobility, advanced manufacturing, and sustainable transportation. VidenBridge supports manufacturers, technology developers, suppliers, and innovators through patent research, technology monitoring, and market intelligence.</p>
+    <div class="focus-label">Our focus areas</div><div class="focus">
+     <span>Electric Vehicles (EVs) & Hybrid Technologies</span><span>Battery Systems & Energy Storage</span><span>Autonomous & Connected Vehicles</span><span>ADAS</span><span>Automotive Electronics & Software</span><span>Lightweight Materials & Vehicle Engineering</span><span>Smart Mobility & Transportation</span>
+    </div>
+   </article>
+   <article class="sector" id="healthcare">
+    <div class="sector-head"><span class="num">INDUSTRY 02</span><span class="symbol">✳</span></div>
+    <h3>Healthcare & Medical Devices</h3><h4>Advancing healthcare through technology intelligence</h4>
+    <p>Healthcare innovation continues to evolve through medical devices, digital health technologies, diagnostics, medical imaging, and advanced treatment systems. VidenBridge helps healthcare innovators and medical technology businesses explore patent landscapes, identify emerging technologies, and understand market developments.</p>
+    <div class="focus-label">Our focus areas</div><div class="focus">
+     <span>Medical Devices & Equipment</span><span>Diagnostic & Imaging Technologies</span><span>Digital Health & Telemedicine</span><span>Wearable Healthcare Technologies</span><span>Surgical Instruments & Robotics</span><span>Remote Patient Monitoring</span><span>Healthcare Technology Innovation</span>
+    </div>
+   </article>
+   <article class="sector" id="pharma">
+    <div class="sector-head"><span class="num">INDUSTRY 03</span><span class="symbol">⌬</span></div>
+    <h3>Pharmaceuticals & Biotechnology</h3><h4>Supporting breakthroughs in pharmaceutical and biotech innovation</h4>
+    <p>Driven by continuous research, scientific discoveries, and evolving intellectual property landscapes, these sectors must navigate emerging research trends, competitive developments, and commercialization opportunities. VidenBridge provides research and intelligence support to inform strategic decisions.</p>
+    <div class="focus-label">Our focus areas</div><div class="focus">
+     <span>Drug Discovery & Development</span><span>Pharmaceutical Formulations</span><span>Biologics & Biosimilars</span><span>Biotechnology Innovations</span><span>Gene & Cell-Based Technologies</span><span>Vaccines & Therapeutic Solutions</span><span>Pharmaceutical Patent Landscapes</span>
+    </div>
+   </article>
+   <article class="sector" id="electronics">
+    <div class="sector-head"><span class="num">INDUSTRY 04</span><span class="symbol">▦</span></div>
+    <h3>Electronics & Semiconductors</h3><h4>Empowering the next generation of electronic innovation</h4>
+    <p>Developments in chip architecture, electronic components, AI hardware, sensors, and advanced semiconductor manufacturing create new opportunities and competitive challenges. VidenBridge helps businesses monitor technology developments, analyze patent activity, and understand the competitive landscape.</p>
+    <div class="focus-label">Our focus areas</div><div class="focus">
+     <span>Semiconductor Devices & Chip Design</span><span>Integrated Circuits & Microprocessors</span><span>Advanced Packaging Technologies</span><span>Sensors & Electronic Components</span><span>AI Hardware</span><span>Consumer Electronics</span><span>Printed & Flexible Electronics</span>
+    </div>
+   </article>
+   <article class="sector" id="materials">
+    <div class="sector-head"><span class="num">INDUSTRY 05</span><span class="symbol">◇</span></div>
+    <h3>Chemicals & Advanced Materials</h3><h4>Exploring innovation in chemical and material science</h4>
+    <p>Advancements in chemical engineering and material science are transforming industries through high-performance materials, advanced polymers, specialty chemicals, and sustainable alternatives. VidenBridge supports businesses in exploring innovation trends, evaluating patent landscapes, and identifying opportunities.</p>
+    <div class="focus-label">Our focus areas</div><div class="focus">
+     <span>Specialty & Industrial Chemicals</span><span>Advanced Polymers & Composites</span><span>Nanotechnology & Nanomaterials</span><span>Sustainable & Bio-Based Materials</span><span>Coatings & Surface Technologies</span><span>Advanced Functional Materials</span><span>Material Recycling & Recovery</span>
+    </div>
+   </article>
+   <article class="sector" id="energy">
+    <div class="sector-head"><span class="num">INDUSTRY 06</span><span class="symbol">⌁</span></div>
+    <h3>Energy & Renewable Technologies</h3><h4>Powering the transition toward sustainable energy</h4>
+    <p>The energy landscape is evolving through renewable energy adoption, energy storage innovation, electrification, and clean technology development. VidenBridge helps organizations monitor energy innovations, explore patent developments, and understand the renewable energy and sustainability landscape.</p>
+    <div class="focus-label">Our focus areas</div><div class="focus">
+     <span>Solar & Photovoltaic Technologies</span><span>Wind Energy Systems</span><span>Battery & Energy Storage</span><span>Hydrogen & Fuel Cells</span><span>Smart Grids & Energy Management</span><span>Electric Power Generation</span><span>Clean Energy & Carbon Reduction</span>
+    </div>
+   </article>
+   <article class="sector" id="it">
+    <div class="sector-head"><span class="num">INDUSTRY 07</span><span class="symbol">⌘</span></div>
+    <h3>Information Technology & Telecommunications</h3><h4>Navigating the rapid evolution of digital technologies</h4>
+    <p>AI, cloud computing, cybersecurity, connected devices, and next-generation communication networks continue to transform these sectors. VidenBridge provides technology intelligence, patent research, and market insights to help businesses understand emerging digital innovations and identify opportunities.</p>
+    <div class="focus-label">Our focus areas</div><div class="focus">
+     <span>Artificial Intelligence & Machine Learning</span><span>Cloud Computing & Data Technologies</span><span>Cybersecurity & Information Security</span><span>Internet of Things (IoT)</span><span>5G & Next-Generation Networks</span><span>Software & Enterprise Technologies</span><span>Blockchain & Distributed Systems</span>
+    </div>
+   </article>
+   <article class="sector" id="aerospace">
+    <div class="sector-head"><span class="num">INDUSTRY 08</span><span class="symbol">✧</span></div>
+    <h3>Aerospace & Defence</h3><h4>Supporting innovation in advanced aerospace technologies</h4>
+    <p>Propulsion systems, advanced materials, avionics, autonomous systems, satellite technologies, and engineering solutions are advancing rapidly. VidenBridge supports technology research and competitive intelligence initiatives to help businesses understand emerging innovations and technological developments.</p>
+    <div class="focus-label">Our focus areas</div><div class="focus">
+     <span>Aircraft & Aerospace Engineering</span><span>Propulsion & Engine Technologies</span><span>Satellite & Space Technologies</span><span>Autonomous Aerial Systems</span><span>Advanced Aerospace Materials</span><span>Avionics & Navigation Systems</span><span>Defence & Security Technologies</span>
+    </div>
+   </article>
+   <article class="sector" id="manufacturing">
+    <div class="sector-head"><span class="num">INDUSTRY 09</span><span class="symbol">⚙</span></div>
+    <h3>Manufacturing & Industrial Engineering</h3><h4>Transforming industrial capabilities through innovation</h4>
+    <p>Automation, robotics, smart manufacturing, industrial IoT, and advanced production technologies are changing industrial operations. VidenBridge helps organizations explore technology advancements, analyze patent activity, and identify opportunities for innovation and operational improvement.</p>
+    <div class="focus-label">Our focus areas</div><div class="focus">
+     <span>Industrial Automation & Robotics</span><span>Smart Manufacturing & Industry 4.0</span><span>Advanced Manufacturing Processes</span><span>Industrial Equipment & Machinery</span><span>Additive Manufacturing & 3D Printing</span><span>Predictive Maintenance</span><span>Process Optimization & Engineering</span>
+    </div>
+   </article>
+   <article class="sector" id="consumer">
+    <div class="sector-head"><span class="num">INDUSTRY 10</span><span class="symbol">◎</span></div>
+    <h3>Consumer Goods, Retail & Packaging</h3><h4>Understanding consumer trends and product innovation</h4>
+    <p>These businesses operate in changing markets shaped by customer expectations, product innovation, sustainability, and digital transformation. VidenBridge supports businesses through market research, competitive intelligence, patent analysis, and technology monitoring to identify emerging trends and innovation opportunities.</p>
+    <div class="focus-label">Our focus areas</div><div class="focus">
+     <span>Consumer Product Innovation</span><span>Food & Beverage Technologies</span><span>Sustainable & Smart Packaging</span><span>Personal Care & Cosmetics</span><span>Retail & E-commerce Technologies</span><span>Product Design & Development</span><span>Consumer Market & Competitor Analysis</span>
+    </div>
+   </article>
+  </div>
+ </div>
+</section>
+
+<section class="capabilities" id="capabilities">
+ <div class="wrap">
+  <div class="kicker">03 / Our capabilities</div>
+  <h2>Intelligence and digital solutions that move businesses forward.</h2>
+  <p class="cap-intro">Regardless of the industry, businesses need reliable information, technological awareness, and effective digital capabilities. VidenBridge combines specialized research and technology-focused services to support organizations at different stages of their business and innovation journeys.</p>
+  <div class="cap-grid">
+   <article class="cap"><div class="n">01 / RESEARCH</div><h3>Patent Intelligence</h3><p>Understand the intellectual property landscape, analyze patent activity, identify technological trends, and explore innovation opportunities through structured patent research and analysis.</p></article>
+   <article class="cap"><div class="n">02 / MARKET</div><h3>Market Intelligence</h3><p>Gain insights into industry developments, market dynamics, competitor strategies, customer trends, and emerging business opportunities.</p></article>
+   <article class="cap"><div class="n">03 / MONITORING</div><h3>Technology Watch</h3><p>Stay informed about emerging technologies, competitor innovations, research developments, and industry advancements through continuous monitoring.</p></article>
+   <article class="cap"><div class="n">04 / DIGITAL</div><h3>Digital Solutions</h3><p>Strengthen your digital presence through website development, web design, UI/UX design, graphic design, and SEO solutions aligned with business objectives.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="wrap why" id="why">
+ <div class="why-layout">
+  <div><div class="kicker">04 / Why VidenBridge?</div><h2>Your partner in research, innovation and digital growth.</h2><p>Every industry has its own challenges, but the need for reliable intelligence and informed decision-making remains universal. We combine research-driven thinking, industry awareness, and technology-focused capabilities to help businesses move forward with greater clarity and confidence.</p></div>
+  <div class="why-list">
+   <article class="why-item"><h3>Industry-Oriented Approach</h3><p>We consider the unique technological, competitive, and business requirements of different industry sectors.</p></article>
+   <article class="why-item"><h3>Research-Driven Insights</h3><p>We transform complex patent, market, and technology information into structured insights that support strategic decisions.</p></article>
+   <article class="why-item"><h3>Innovation-Focused Perspective</h3><p>We help businesses understand emerging developments, evaluate opportunities, and stay informed about technological advancements.</p></article>
+   <article class="why-item"><h3>Integrated Capabilities</h3><p>Our combination of intelligence research and digital solutions provides support across multiple business requirements.</p></article>
+   <article class="why-item"><h3>Business-Focused Solutions</h3><p>We align our research and digital capabilities with practical business objectives and evolving organizational needs.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="cta">
+ <div class="wrap cta-inner">
+  <div><div class="kicker">Let's explore new opportunities together</div><h2>Turn industry challenges into opportunities for growth.</h2><p>Whether you are exploring a new technology, evaluating a competitive landscape, monitoring industry developments, or strengthening your digital presence, let's discuss your industry requirements.</p></div>
+  <a class="btn" href="mailto:enquiries@videnbridge.com?subject=Discuss%20my%20industry%20requirements">Talk to Our Experts ↗</a>
+ </div>
+</section>
+</main>
+
+<footer class="footer">
+ <div class="wrap">
+  <div class="footer-top">
+   <div><a class="brand" href="#">Viden<span>Bridge</span></a><p>Patent intelligence, market research, and technology watch services for better-informed business decisions.</p></div>
+   <div class="footer-links"><a href="#">Home</a><a href="#industries">Industries</a><a href="#capabilities">Our Services</a><a href="#why">About Us</a><a href="mailto:enquiries@videnbridge.com">Contact</a></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 VidenBridge. All rights reserved.</span><span>Intelligence. Innovation. Digital Growth.</span></div>
+ </div>
+</footer>
+</body>
+</html>
