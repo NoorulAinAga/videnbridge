@@ -2874,7 +2874,10 @@ a {
   }
 
   .industries-tabs {
-    grid-template-columns: 1fr;
+    display: flex;
+        width: 100%;
+        flex-direction: column-reverse;
+    
   }
 
   .industries-tab-list {
