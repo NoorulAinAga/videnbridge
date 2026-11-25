@@ -175,7 +175,7 @@ export const siteContent = {
         ],
         linkLabel: "Explore Patent Intelligence",
         image:
-          "/image/hero-technology-network.jpg",
+          "/image/Patent-Intelligence.jpg",
         imageAlt: "Digital global network representing patent intelligence",
       },
       {
