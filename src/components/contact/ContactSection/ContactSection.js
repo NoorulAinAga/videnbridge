@@ -20,13 +20,7 @@ export default function ContactSection({ contact }) {
     setSubmitting(true);
 
     try {
-      const response = await fetch("/api/contact.php", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
-      });
-      const result = await response.json();
-      if (!response.ok) throw new Error(result.message || "Could not send your enquiry.");
+      const result = await submitEnquiry(form);
       setStatus({ type: "success", message: result.message });
       setForm(initialForm);
     } catch (error) {
@@ -34,6 +28,37 @@ export default function ContactSection({ contact }) {
     } finally {
       setSubmitting(false);
     }
+  }
+
+  async function submitEnquiry(payload) {
+    const endpoints = ["/api/contact.php", "/api/contact"];
+    let lastError = null;
+
+    for (const endpoint of endpoints) {
+      let response;
+      try {
+        response = await fetch(endpoint, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        });
+      } catch (error) {
+        lastError = error;
+        continue;
+      }
+
+      const contentType = response.headers.get("content-type") || "";
+      if (!contentType.includes("application/json")) {
+        // Endpoint returned non-JSON (e.g. raw PHP source when not executed) — try next
+        continue;
+      }
+
+      const result = await response.json();
+      if (!response.ok) throw new Error(result.message || "Could not send your enquiry.");
+      return result;
+    }
+
+    throw lastError || new Error("Could not send your enquiry. Please try again shortly.");
   }
 
   return (
