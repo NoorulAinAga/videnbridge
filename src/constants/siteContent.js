@@ -17,6 +17,24 @@ export const siteContent = {
       href: "/services",
       children: [
         {
+          label: "Patent Intelligence",
+          href: "/services#patent-intelligence",
+          description:
+            "Patent landscapes, competitor analysis, and due diligence searches.",
+        },
+        {
+          label: "Market Intelligence",
+          href: "/services#market-intelligence",
+          description:
+            "Market research and competitive intelligence for better decisions.",
+        },
+        {
+          label: "Technology Watch",
+          href: "/services#technology-watch",
+          description:
+            "Monthly and quarterly monitoring of technologies and competitors.",
+        },
+        {
           label: "IT Solutions",
           href: "/services/digital-solutions",
           description:

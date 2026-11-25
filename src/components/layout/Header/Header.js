@@ -156,27 +156,6 @@ export default function Header({ brand, navigation }) {
                           </span>
                         </Link>
                       ))}
-
-                      <Link
-                        href={item.href}
-                        className="service-dropdown-link"
-                        onClick={closeMenus}
-                      >
-                        <span className="service-link-icon">
-                          ↗
-                        </span>
-
-                        <span className="service-link-copy">
-                          <strong>Explore All Services</strong>
-                          <small>
-                            Intelligent research services
-                          </small>
-                        </span>
-
-                        <span className="service-link-arrow">
-                          →
-                        </span>
-                      </Link>
                     </div>
 
                     <Link

@@ -1,7 +1,7 @@
 
 import nodemailer from "nodemailer";
 
-const CONTACT_TO = "sadaf.fatima@videnbridge.com";
+const DEFAULT_CONTACT_TO = "sadaf.fatima@videnbridge.com";
 
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -72,6 +72,9 @@ export async function POST(request) {
       );
     }
 
+    const contactTo =
+      process.env.CONTACT_TO || DEFAULT_CONTACT_TO;
+
     const port = Number(process.env.SMTP_PORT || 587);
 
     const transporter = nodemailer.createTransport({
@@ -88,7 +91,7 @@ export async function POST(request) {
     // Send enquiry email
     await transporter.sendMail({
       from: process.env.CONTACT_FROM,
-      to: CONTACT_TO,
+      to: contactTo,
       replyTo: {
         name,
         address: email,
