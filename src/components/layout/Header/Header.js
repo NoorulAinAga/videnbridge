@@ -2,11 +2,31 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function Header({ brand, navigation }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const navRef = useRef(null);
+  const servicesDropdownRef = useRef(null);
+
+  useEffect(() => {
+    if (!servicesOpen) return;
+    if (window.innerWidth > 768) return;
+
+    const nav = navRef.current;
+    const dropdown = servicesDropdownRef.current;
+    if (!nav || !dropdown) return;
+
+    const navRect = nav.getBoundingClientRect();
+    const dropdownRect = dropdown.getBoundingClientRect();
+    const visibleBottom = Math.min(navRect.bottom, window.innerHeight);
+    const overflow = dropdownRect.bottom - visibleBottom;
+
+    if (overflow > 0) {
+      nav.scrollTop += overflow;
+    }
+  }, [servicesOpen]);
 
   const closeMenus = () => {
     setMenuOpen(false);
@@ -60,6 +80,7 @@ export default function Header({ brand, navigation }) {
         {/* Main navigation */}
         <nav
           id="main-navigation"
+          ref={navRef}
           className={`main-nav ${menuOpen ? "is-open" : ""}`}
           aria-label="Main navigation"
         >
@@ -120,7 +141,10 @@ export default function Header({ brand, navigation }) {
                   </div>
 
                   {/* Services dropdown */}
-                  <div className="services-dropdown">
+                  <div
+                    className="services-dropdown"
+                    ref={servicesDropdownRef}
+                  >
                     <div className="dropdown-heading">
                       <span className="dropdown-eyebrow">
                         WHAT WE DO
