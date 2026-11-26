@@ -1,5 +1,6 @@
 
 const CONTACT_TO = "sadaf.fatima@videnbridge.com";
+const CONTACT_FROM = "aagaali703@gmail.com";
 
 export async function POST(request) {
   try {
@@ -14,7 +15,16 @@ export async function POST(request) {
     if (!name || !email || !service || !message) {
       return Response.json(
         { message: "Please complete all required fields." },
-        { status: 400 }
+        { status: 400 },
+      );
+    }
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailPattern.test(email)) {
+      return Response.json(
+        { message: "Please enter a valid email address." },
+        { status: 400 },
       );
     }
 
@@ -39,11 +49,15 @@ ${message}
         },
         body: JSON.stringify({
           to: [CONTACT_TO],
-          subject: `New Website Enquiry - ${service}`,
+          from: CONTACT_FROM,
+          replyTo: {
+            name: name,
+            address: email,
+          },
+          subject: `New VidenBridge Website Enquiry - ${service}`,
           text: emailContent,
-          replyTo: email,
         }),
-      }
+      },
     );
 
     const result = await response.json();
@@ -61,8 +75,10 @@ ${message}
     console.error("Contact form submission failed:", error);
 
     return Response.json(
-      { message: "We could not send your enquiry. Please try again shortly." },
-      { status: 500 }
+      {
+        message: "We could not send your enquiry. Please try again shortly.",
+      },
+      { status: 500 },
     );
   }
 }
