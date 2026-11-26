@@ -1,5 +1,7 @@
 
-const CONTACT_TO = "sadaf.fatima@videnbridge.com";
+const DEFAULT_CONTACT_TO = "sadaf.fatima@videnbridge.com";
+
+const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export async function POST(request) {
   try {
@@ -20,8 +22,6 @@ export async function POST(request) {
     }
 
     // Validate email format
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
     if (!emailPattern.test(email)) {
       return Response.json(
         { message: "Please enter a valid email address." },
@@ -42,6 +42,9 @@ export async function POST(request) {
         { status: 400 }
       );
     }
+
+    const contactTo =
+      process.env.CONTACT_TO || DEFAULT_CONTACT_TO;
 
     // Prepare email content
     const emailContent = `
@@ -65,13 +68,10 @@ ${message}
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          to: [CONTACT_TO],
-          subject: `New VidenBridge Website Enquiry - ${service}`,
+          to: [contactTo],
+          subject: `New VidenBridge website enquiry — ${service}`,
           text: emailContent,
-          replyTo: {
-            name: name,
-            address: email,
-          },
+          replyTo: email,
         }),
       }
     );
@@ -79,13 +79,14 @@ ${message}
     const result = await response.json();
 
     if (!response.ok || !result.success) {
-      console.error("Email Gateway error:", result);
+      console.error("GoDaddy Email Gateway error:", result);
       throw new Error("Email delivery failed");
     }
 
     return Response.json(
       {
-        message: "Thank you. Your enquiry has been sent successfully.",
+        message:
+          "Thank you. Your enquiry has been sent successfully.",
       },
       { status: 200 }
     );
@@ -95,7 +96,8 @@ ${message}
 
     return Response.json(
       {
-        message: "We could not send your enquiry. Please try again shortly.",
+        message:
+          "We could not send your enquiry. Please try again shortly.",
       },
       { status: 500 }
     );
