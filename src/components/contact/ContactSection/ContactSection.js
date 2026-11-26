@@ -71,12 +71,7 @@ export default function ContactSection({ contact }) {
           </div>
         </div>
 
-        <form
-          className="contact-form"
-          method="POST"
-          action="/api/contact"
-          onSubmit={handleSubmit}
-        >
+        <form className="contact-form" onSubmit={handleSubmit}>
           <div className="form-heading">
             <p className="eyebrow">SEND AN ENQUIRY</p>
             <h3>How can we help?</h3>
